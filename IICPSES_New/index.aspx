@@ -5,10 +5,13 @@
 <asp:Content ID="CodeInput" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
         <div>
-            <h3>Secret Code</h3>
-            <asp:TextBox ID="txtSecretCode" CssClass="form-control" required="required" autofocus="autofocus" runat="server"></asp:TextBox>
+            <asp:Label ID="lblcode" CssClass="label label-primary" runat="server" Text="Code"></asp:Label>
+            <div>
+                <asp:TextBox ID="txtSecretCode" CssClass="form-control" required="required" autofocus="autofocus" runat="server" Wrap="True"></asp:TextBox>
+            </div>
             <br />
             <asp:Button ID="btnSubmit" CssClass="btn btn-primary" runat="server" Text="Submit" />
-        </div>
+            <br />
+            </div>
     </div>
 </asp:Content>
