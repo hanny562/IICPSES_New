@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IICPSES_New", "IICPSES_New\IICPSES_New.csproj", "{57053E07-E2A6-4A46-8089-440B4E31331A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IICPSES_New.Tests", "IICPSES_New.Tests\IICPSES_New.Tests.csproj", "{A6CF565F-62C8-4137-8EBA-15CBDB456623}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57053E07-E2A6-4A46-8089-440B4E31331A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57053E07-E2A6-4A46-8089-440B4E31331A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57053E07-E2A6-4A46-8089-440B4E31331A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57053E07-E2A6-4A46-8089-440B4E31331A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6CF565F-62C8-4137-8EBA-15CBDB456623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6CF565F-62C8-4137-8EBA-15CBDB456623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6CF565F-62C8-4137-8EBA-15CBDB456623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6CF565F-62C8-4137-8EBA-15CBDB456623}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
