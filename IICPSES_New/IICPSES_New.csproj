@@ -102,6 +102,7 @@
     <Content Include="scripts\jquery-3.1.1.min.map" />
     <Content Include="Front.Master" />
     <Content Include="index.aspx" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -151,6 +152,24 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ControlPanel\Lecturers\" />
+    <Folder Include="ControlPanel\Programs\" />
+    <Folder Include="ControlPanel\Report\" />
+    <Folder Include="ControlPanel\Schools\" />
+    <Folder Include="ControlPanel\Semesters\" />
+    <Folder Include="ControlPanel\Subjects\" />
+    <Folder Include="ControlPanel\Surveys\" />
+    <Folder Include="ControlPanel\Users\" />
+    <Folder Include="Survey\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
