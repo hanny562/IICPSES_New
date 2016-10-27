@@ -7,18 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace IICPSES_New
 {
-    public partial class Back : System.Web.UI.MasterPage
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void logout_button(object sender, EventArgs e)
+        protected void btnSignIn_Click(object sender, EventArgs e)
         {
-            Session.Abandon();
-            Session.Clear();
-            Response.Redirect("~/Login.aspx");
+            //ValidateUserInfo(txtEmail.Text.Trim(), txtPassword.Text.Trim());
         }
     }
 }
