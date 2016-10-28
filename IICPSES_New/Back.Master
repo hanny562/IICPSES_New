@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Back.master.cs" Inherits="IICPSES_New.Back" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Student Evaluation System</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Assets/css/dashboard.css" />
+    <link rel="stylesheet" href="Assets/css/iicpses.css" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <asp:HyperLink runat="server" CssClass="navbar-brand" NavigateUrl="~/ControlPanel/Index.aspx">Student Evaluation System</asp:HyperLink>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="lbWelcome" runat="server"></a></li>
+                        <li>
+                            <asp:HyperLink NavigateUrl="~/ControlPanel/Index.aspx" runat="server" ID="lnkCP_Nav_Overview" Text="Dashboard" /></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a id="logout" href="#" runat="server" onserverclick="logout_button">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <ul class="nav nav-sidebar">
+                        <li runat="server">
+                            <asp:HyperLink NavigateUrl="~/ControlPanel/Index.aspx" runat="server" ID="lnkCP_Index" Text="Overview" />
+                        </li>
+                        <li runat="server">
+                            <asp:HyperLink NavigateUrl="~/ControlPanel/Schools/" runat="server" ID="lnkCP_Data" Text="Data" />
+                        </li>
+                        <li runat="server">
+                            <asp:HyperLink NavigateUrl="~/ControlPanel/Users/" runat="server" ID="InkCP_User" Text="Users" />
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                    <form id="frmMain" runat="server">
+                        <asp:ScriptManager runat="server">
+                            <Scripts>
+                                <asp:ScriptReference Path="~/Assets/js/jquery-3.1.1.min.js" />
+                                <asp:ScriptReference Path="~/Assets/js/bootstrap.min.js" />
+                            </Scripts>
+                        </asp:ScriptManager>
+                        <div>
+                            <asp:ContentPlaceHolder ID="cphMain" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <%--<footer class="footer">
+          <div class="container">
+            <p class="text-muted">&copy; <%= DateTime.Now.Year %> INTI International College Penang Student Evaluation System</p>
+          </div>
+        </footer>--%>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    </div>
+</body>
+</html>

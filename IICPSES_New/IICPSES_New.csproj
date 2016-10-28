@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="Assets\bootstrap\css\bootstrap.css" />
     <Content Include="Assets\bootstrap\css\bootstrap.min.css" />
     <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
@@ -961,6 +962,10 @@
     <Content Include="Assets\plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="Assets\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="ControlPanel\Index.aspx" />
+=======
+    <Content Include="admin\index.aspx" />
+    <Content Include="Login.aspx" />
+>>>>>>> refs/remotes/origin/master
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -969,6 +974,7 @@
     <Content Include="scripts\jquery-3.1.1.min.map" />
     <Content Include="Front.Master" />
     <Content Include="index.aspx" />
+<<<<<<< HEAD
     <Content Include="Site.Master" />
     <Content Include="Assets\bootstrap\css\bootstrap.css.map" />
     <Content Include="Assets\bootstrap\css\bootstrap.min.css.map" />
@@ -1006,6 +1012,10 @@
     <Content Include="Assets\plugins\datatables\extensions\TableTools\Readme.md" />
     <Content Include="Assets\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Assets\plugins\input-mask\phone-codes\phone-codes.json" />
+=======
+    <Content Include="Login.Master" />
+    <Content Include="Back.Master" />
+>>>>>>> refs/remotes/origin/master
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1042,12 +1052,35 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="ControlPanel\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ControlPanel\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+=======
+    <Compile Include="admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Back.Master.cs">
+      <DependentUpon>Back.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Back.Master.designer.cs">
+      <DependentUpon>Back.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+>>>>>>> refs/remotes/origin/master
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Front.Master.cs">
@@ -1064,6 +1097,7 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1082,6 +1116,15 @@
     <Folder Include="ControlPanel\Surveys\" />
     <Folder Include="ControlPanel\Users\" />
     <Folder Include="Survey\" />
+=======
+    <Compile Include="Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+>>>>>>> refs/remotes/origin/master
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
